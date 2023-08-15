@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Teste | Cypress</title>
+  </head>
+  <body>
+    <div class="bg-grey-lighter min-h-screen flex flex-col">
+    <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+      <div 
+        class="flex items-center flex-col bg-white px-6 py-8 rounded shadow-md text-black w-full"
+        >
+        <img src="images/cypress.png" width="200px" height="200px" />
+        <h1 class="mb-8 text-3xl text-center">Entrar Cypress</h1>
+        <div class="w-full mb-4">
+          <input 
+            type="text"
+            class="block border border-grey-light w-full p-3 rounded"
+            name="user_email"
+            placeholder="Email" />
+          <small id="message-error-email" class="element-unvisible flex items-center font-medium tracking-wide text-red-500 text-xs mt-1 ml-1">
+          Digite um email
+          </small>
+        </div>
+        <div class="w-full mb-4">
+          <input 
+            type="password"
+            class="block border border-grey-light w-full p-3 rounded"
+            name="user_password"
+            placeholder="senha" />
+          <small id="message-error-password" class="element-unvisible flex items-center font-medium tracking-wide text-red-500 text-xs mt-1 ml-1">
+          Digite uma senha
+          </small>
+        </div>
+        <div class="w-full flex items-center flex-col">
+          <button
+            type="submit"
+            class="w-full text-center py-3 rounded bg-green-500 text-white hover:bg-green-dark my-1"
+            onclick="handleLogin()"
+            >
+          Entrar
+          </button>
+          <a href="cadastrar.html" class="flex items-center mt-4 font-medium tracking-wide text-gray-800 text-xs mt-1 ml-1">
+          Ir para o Cadastro
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
